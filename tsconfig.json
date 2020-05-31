@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ES7",
+      "dom",
+      "ESNext.BigInt"
+    ],
+    "target": "ES6",
+    "rootDirs": ["src", "test"],
+    "outDir": "lib",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "declaration": true
+  },
+  "include": ["src"]
+}
