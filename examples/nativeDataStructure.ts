@@ -30,4 +30,9 @@ console.log(asString);
 
 const parsed = uncomplex.parseObject(asString);
 console.log(parsed);
-// data structure with recreated instances
+// { bigInt: 9999999999999n,
+//   date: 2027-01-15T08:00:00.000Z,
+//   map: Map { 'a' => 'aa', 'b' => 42 },
+//   sym1: Symbol(a),
+//   sym2: Symbol(b),
+//   sym1alt: Symbol(a) }
