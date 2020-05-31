@@ -11,7 +11,7 @@ export const SymbolEntityInterface: UncomplexEntityInterface<symbol, { id: numbe
     const existingSymbolIndex = state.symbols.findIndex(s => s === object);
     const key = object.toString().substring(7).slice(0, -1);
 
-    if (existingSymbolIndex > 0) {
+    if (existingSymbolIndex >= 0) {
       return { id: existingSymbolIndex, key };
     } else {
       state.symbols.push(object);

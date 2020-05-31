@@ -107,7 +107,7 @@ console.log(asString);
 //   "map":{"entries":[["a","aa"],["b",42]],"__uncomplexId":"Map"},
 //   "sym1":{"id":0,"key":"a","__uncomplexId":"Symbol"},
 //   "sym2":{"id":1,"key":"b","__uncomplexId":"Symbol"},
-//   "sym1alt":{"id":2,"key":"a","__uncomplexId":"Symbol"}
+//   "sym1alt":{"id":0,"key":"a","__uncomplexId":"Symbol"}
 // }
 
 const parsed = uncomplex.parseObject(asString);
@@ -118,4 +118,7 @@ console.log(parsed);
 //   sym1: Symbol(a),
 //   sym2: Symbol(b),
 //   sym1alt: Symbol(a) }
+
+console.log(parsed.sym1 === parsed.sym2, parsed.sym1 === parsed.sym1alt);
+// false, true
 ```
